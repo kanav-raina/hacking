@@ -1,0 +1,5 @@
+There are three types of redirects:
+
+PRECEDENCE	HTTP redirects
+		HTML redirects
+		JavaScript redirects

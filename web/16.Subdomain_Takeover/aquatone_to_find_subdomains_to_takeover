@@ -1,0 +1,6 @@
+aquatone-discover
+	aquatone-discover -d flipkart.com --disable-collectors dictionary
+aquatone-scan
+	aquatone-scan -d flipkart.com
+aquatone-takeover
+	aquatone-takeover -d flipkart.com

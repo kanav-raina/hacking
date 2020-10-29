@@ -1,0 +1,28 @@
+Uploaded files represent a significant risk to applications.The first step in many attacks is to get some code to the system to be attacked.Then the attack only needs to find a way to get the code executed.Using a file upload helps the attacker accomplish the first step.
+
+The consequences of unrestricted file upload can vary including complete system takeover ,an overload file system or database ,forwarding attacks to back end systems, client side attacks or simple defacement .It depends on what the application does with the uploaded file and especially where it is stored.
+
+	file.php
+	file.php.jpeg
+
+Modify Content-Type
+Find upload button then try to upload file with intercept is on,now modify the content type.
+
+Hunting Methodology
+It's not necessary for bug bounty to upload webshell only.If you will be able to upload any of these files on web application then you will get bounty.
+If you are able to upload any of the file from this link,then there is a file uploading vulnerability.
+
+Another way of hunting file uploading 
+	1.Sometimes you won't be able to bypass their filter
+	2.In this case you can try automation of file uploading
+	3.Tool   fuxploider github
+
+python3 fuxploider.py --url http://abc.com/index.php
+
+EXAMPLE:  weevely generate [password] [filename]
+1.Generate backdoor
+2.Upload generated file
+3.Connect to it
+			weevely [url to file] [password]
+
+If a check is only at client side, you can easily bypass it. 

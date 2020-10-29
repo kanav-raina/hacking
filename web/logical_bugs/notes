@@ -1,0 +1,2 @@
+ability to verify email that you dont own
+     change email->Confirmation email sent->Copy the resent confirmation mail->closely look at the confirmation mail->If there is a token try to bypass it				refernce-:https://hackerone.com/reports/229619

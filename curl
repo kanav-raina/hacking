@@ -1,0 +1,8 @@
+curl url -I         	yeh apko response dega request ka
+curl url_image -O   	image download ho jayegi
+curl url -I -X OPTIONS	Yeh jo ha apko return krega kay kaun kaun se options apke pass hain
+curl url -I -X PUT -T /home/kanv/file/jpeg          file will be uploaded to teh server
+curl http://url/path/file.txt -I -X DELETE          file.txt will be deleted
+curl http://url/path.php -I --data "username=kanav&password=12345&login=Login" -L
+                                   Copy and paste this from burp
+                                   This request is used to send a login request to browser

@@ -1,0 +1,5 @@
+POST vulnerable.php?filename=php://input HTTP/1.1
+Host: victim.com
+<?=system('ls'); ?>
+
+There is a handful of PHP wrappers who can access different I/O or data streams via the PHP daemon and can (if enabled; allow_url_include) lead to a direct execution of instructions. php://input is a read-only stream that allows reading raw data from the request body. In this case, it is possible to inject code via POST-request:

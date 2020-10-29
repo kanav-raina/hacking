@@ -1,0 +1,33 @@
+Pick any image and name it as “><img src=x onerror=prompt(document.domain)>
+
+For every file upload page, there are some headers that always exist:
+    File name
+    File type
+    Magic numbers
+    File Content
+    File Size
+    
+    
+Scenario 1: Case Insenstive Check    php is not allowed but Php is allowed
+
+Scenario 2: .cer and .asa mapped to asp.dll in microsoft
+
+Scenario 3: File with eml extension can cause stored XSS
+
+Scenario 4: file.jpg.php
+
+Scenario 5: shell.php%001.jpg
+
+Scenario 6: File with svg ext can cause xss
+
+Scenario 7: SSRF vuln in ffmpeg library in github
+
+Scenario 8: File with name of ../../../logo.jpg can cause directory traversal
+
+Scenario 11:intitle :"index of" intext:".aspx;1.jpg"
+
+Scenario 12: DOS File was too large
+
+Scenario 14: SQL injection payload in file name
+
+Scenario 15: Cross domain hijacking 

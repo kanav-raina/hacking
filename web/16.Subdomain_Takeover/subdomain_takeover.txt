@@ -1,0 +1,30 @@
+Hackers can claim subdomains with the help of external services.This attack is personally non-traceable,and affects atleast 17 large service providers and multiple domains are affected.
+
+Attack Scenario:
+	Your company start using a new service,eg an external Support Ticketing Service .
+	Your company points to a subdomain to the support ticketing service,eg support.yourdomain.com
+	Your company stops using this service but does not remove the subdomain redirection pointing to the ticketing system.
+	Attacket signs up for the service and claims the domain as theirs.No verification is done by Service Provider, and the DNS setup is already correctly setup.
+	Attacker can now build a complete clone of the real site, add a login form.redirect the user, steal credentials(eg admin account), cookies and or completely destroy business credibility for your company.
+
+Three things that make this scenario worse
+	Its super easy.Sign up for a new account and claim the domain.
+	Its completely hidden.The domain owner won't notice.The attacker won't leave any traces for the Domain Owner 
+	The service provider is unlikely to be able to fix this in a feasible way.
+
+Now if this was not bad enough, imagine this scenario
+	A domain owner points their * DNS-Entry to eg Heroku.		           (// * is wildcard here)
+	They forget to add the wildcard-entry to their Heroku app.
+	Attacker can now claim any subdomain they want from the domain owner.
+	A domain owner will be unaware of the subdomain being exploited.
+
+TOOL for hunting subdomain Takeover
+	Download HostileSubBruteforcer on Linux.
+               https://github.com/nahamsec/HostileSubBruteforce
+
+STEPS:
+	1.Find  a subdomain pointing to third party.
+	2.Make sure their service is inactive or cancelled or expired.
+	3.Go to that third party website, register as client and when they will ask to point your subdomain, you just give subdomain.com
+
+eg: facebook.nokia.com

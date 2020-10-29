@@ -1,0 +1,5 @@
+Login page to bruteforce forms
+	wfuzz -c -w /root/Desktop/wordlists -d "username=abc@gmail.com&password=FUZZ" -u https://site.com/login.php
+
+Directory brute force
+	wfuzz -w /usr/share/wordlists/Seclist/Discovery/Web-Content/SVNdigger/all.txt -hc 403,404 -u https://site.com/FUZZ

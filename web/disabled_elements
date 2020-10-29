@@ -1,0 +1,13 @@
+Disabled Elements:  “disabled” attribute in form elements
+                    “disabled” class in HTML elements
+                    “*-inactive-*” class in HTML elements
+                    “readonly” attribute in form input element
+                    
+How to approach:-
+    Find a form with disabled elements
+    Submit the Form
+    Replay the Request in Repeater
+    Add the disabled parameter to  the body of the request
+    Forward the Request
+
+

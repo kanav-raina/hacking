@@ -1,0 +1,6 @@
+.zip, .tar, .gz, .tgz, .rar, ...: (Compressed) archive files
+.java: No reason to provide access to Java source files
+.txt: Text files
+.pdf: PDF documents
+.doc, .rtf, .xls, .ppt, ...: Office documents
+.bak, .old and other extensions indicative of backup files

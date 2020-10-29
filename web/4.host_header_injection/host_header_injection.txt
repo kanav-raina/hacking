@@ -1,0 +1,23 @@
+#Host Header Injection
+In many cases, developers are trusting the host header value and using it to generate links, import scripts and even generate password reset links with its value.This is a very bad idea, because the http host header can be controlled by an attacker. This can be exploited using web-cache poisoning and by abusing alternative channels like password reset emails.
+
+#Host Header attack hunting 
+    >>Change host to bing.com if its reflected then there is a chance of host header injection.
+    >>Add X-Forwarded Host to bing.com, if its redirected then there is host header injection.
+
+#Web cache poisoning through host header injection
+	1.Find a url having status code 2xx/3xx.
+	2.You have to try once on each 2xx.
+	3.If internal domain will change after that then there is a host header injection attack
+
+	Change host to bing.com,if it is reflecting then check at which link it is reflecting.Click on that link and if it is redirecting to different domain, then there is a web cache poisoning
+
+
+
+HOST HEADER ATTACK ON PASSWORD RESET POISONING 
+XSS  through host header attack
+
+
+
+Other method: change host to bing.com and add X-Forwarded-Host to the previous host
+

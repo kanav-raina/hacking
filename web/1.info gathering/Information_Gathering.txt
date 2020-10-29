@@ -1,0 +1,91 @@
+http://dns.bufferover.run/dns?q=smvdu.ac.in
+
+#Information gathering websites
+	whois.domaintools.com
+	toolbar.netcraft.com/site_report?url=
+	exploit-db.com
+	robtex.com
+	shodan.io
+	censys.io
+	host.io
+	ipinfo.io
+	asnlookup.com/api/lookup?org=yahoo
+
+#Finding Subdomain                             (#github.com/appsecco/the_art_of_subdomain_enumeration)
+	assetfinder by tomnomnom
+	certspotter by nahamsec
+	amass
+	subfinder
+	knockpy
+	sublist3r
+	virustotal
+	google fu
+	dig
+	bluto
+	cert.sh
+	also find subdomain through ip               asnlookup.com/api/lookup?org=yahoo         nahamsec
+
+#Fingerprinting(Identify technologies)
+    wappalyzer
+    whatweb
+    builtwith
+    
+#DataBreaches
+    haveibeenpawned
+    weleakinfo.com
+
+After finding subdomains look for juicy keywords in subdomains like dev, beta, prod, test, stg etc
+
+/robots.txt
+
+#Directory Bruteforcing
+	dirbuster
+	gobuster
+	dirsearch
+
+#Information Gathering with Google Dorks
+	inurl
+	intext
+	filetype
+	intitle
+	site
+	link
+	inurl:abc.com -inurl:www.abc.com
+
+
+
+#GATHERING Information From Headers                               : HTTP LiveHeaders
+
+#Gathering information from terminal
+	#Downloading The Source Code of Website                       : httrack
+	#Gathering information from whatweb                           : whatweb google.com
+	#Using theharvester for some publicly available information   :theharvester -d smvdu.ac.in
+	massscan :alternative of nmap
+	nslookup
+	dnsrecon
+	
+
+#TheWayBackMachine
+	https://archive.org/web    It will show the screenshots of website from its birthdate to today date
+
+#Which subdomains are https and http  :httpprobe by tomnomnom
+#Which domains are up :meg by tomnomnom
+
+#LESS TRAVELLED ROAD : wolframalpha.com
+#Find emails of domain :hunter.io
+#Use webscreenshot to take screenshots of websites which are up.You can also use aquatone, it's lot better
+
+
+$METHODOLOGY:
+  1.First select the website.
+  2.Find subdomains.Find subdomains also through their ip.
+  3.First check which subdomains are up .
+  4.Rank the subdomains by their popularity using wolframalpha.com
+  5.Find ip address.      ping abc.com
+  6.start testing
+  
+  
+securityheaders.com    tells you which security headers are missing
+
+
+ 

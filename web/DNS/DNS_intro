@@ -1,0 +1,50 @@
+DNS RECORDS
+	Resource Records
+	Database Records
+	Basic Data Element
+	Saved in Zone Files
+	
+
+Types of DNS Records:
+	SOA
+	NS
+	A or AAAA
+	CNAME
+	MX
+	PTR
+	SRV
+	
+SOA
+	>>First Resource Record
+	>>Source Host
+	>>Serial Number
+	>>Refresh, Retry and Expire Time
+
+NS
+	>>Name Server record that indicates authoritive name servers for the zone or domain
+
+A or AAA
+	>>Host records
+	>>Link a domain name to IP address
+	         A     -IPv4
+	         AAAA  -Ipv6
+	         
+CNAME
+	>>Related to redirects
+	
+MX
+	>>Related to mail records
+	
+	
+PTR record
+	>>Also called Reverse DNS record.
+	>>Reverse  of a record
+	>>Maps an IP address to hostname
+			reverse lookup
+			
+SRV
+	>>Service Records
+		>To utilize some services, SRV record can be required in your domain.
+		>used to identify computers that host specific services.
+		>Hostname and port number of servers for specified services.
+		>FTP

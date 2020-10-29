@@ -1,0 +1,24 @@
+CVE-2017 9506           Jira versions vulnerable to SSRF.If you see jira then possibility of SSRF   Jira versions < 7.3.5.
+inurl:companyname intitle:jira
+
+
+CVE 2018 100600         Jenkins
+inurl:companyname  intitle:Jenkins
+
+XSS leading to  SSRF
+      <script>document.write("123")</script>
+      
+      
+      
+PDF Generator:
+    headless browsers
+    makhtmlpdf
+    
+    weasyprint pip install weasyprint you have tried this
+    
+    
+    
+Content-Disposition: form-data;name="afdasfs"
+Helvetica</style>FOO<%= `ls` %>BAR
+
+

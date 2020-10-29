@@ -1,0 +1,11 @@
+Race condition simply means perform repeated actions in a very short period of time.Usually occur in coupon, upload
+
+Sent too many requests, got many responses only one response was different
+By sending the purchase request again and again a race condition will occur`
+Duplicate payouts of bounty on hackerone due to race condition
+Race Condition allows a malicious application to obtain several access_token and refresh_token pairs while only one pair should be generated. Further, it leads to authorization bypass when access would be revoked.https://hackerone.com/reports/55140
+
+Race condition in file uploading.First user will see the other user uploaded file
+Race condition in redeeming coupon:captured coupon request can be used more than once
+Race condition leads to memory disclosure 
+Register multiple users using one invitation (race condition)

@@ -1,0 +1,7 @@
+When looking for SSRF vulnerabilities, file upload URLs, proxies and webhooks are good places to start. But also pay attention to the SSRF entry points that are less obvious: URLs embedded in files that are processed by the application, hidden API endpoints that accept URLs as input, and HTML tag injections.
+
+
+change the type=file to type=url and check whether there is a hit
+it is possible to use other schemes and protocols in a SSRF attack other than HTTP. Examples of these are file://, phar://, gopher://, data://and dict://
+
+

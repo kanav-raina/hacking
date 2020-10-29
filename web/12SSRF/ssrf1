@@ -1,0 +1,17 @@
+First thing to do when we find an SSRF is to test all the wrapper which are working
+file:///
+dict://
+sftp://
+ldap://
+tftp://
+gopher://
+
+webhook mtlb response hota hai jo server bejta hai client ko agr kuch updation vagerha hui ho
+
+Try changing the url in post request, hoskt hai kay request send ho jaye kisi aur service ko
+
+	<input type=”file” id=”upload_file” name=”upload_file[]” class=”file” size=”1" multiple=””>
+		to
+	<input type=”url” id=”upload_file” name=”upload_file[]” class=”file” size=”1" multiple=””>
+
+jitne bi url parameters hain google dork kro and check kro kay ssrf bypass ho raha hai ya ni

@@ -1,0 +1,9 @@
+#PARAMETER TAMPERING
+The web parameter tampering attack is based on the manipulation of parameters exchanged between client and server in order to modify application data,such as user credentials and premissions,price and quantity of products etc.Usually this information is stored in cookies,hidden form fields,URL query string and is used to increase application functionality and control.
+
+#Methodology
+ Capture the request and modify the values, in this way you will be able to bypass client side checks.
+ 
+ amount=100&quantity=2         total 200
+ amount=100&quantity=0.1       total 10
+ 

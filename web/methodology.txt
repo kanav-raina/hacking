@@ -1,0 +1,71 @@
+Missing SPF
+
+1.Map the application
+    subdomains
+    robots.txt
+    nikto                                                                        JNSR
+    javascript enabled and disabled
+    
+2.Analyze the application
+    Application is created for what
+    what technologies are used for creating application                          TCS
+    map the attack surface like spider this host
+  
+  
+Try ZAP, skipfish
+  
+3.Test Client Side Controls
+    lenght limit
+    bypass filter by intercepting the request    client side verification        CLC
+    cookies urls
+    
+4.Authentication
+    password quality
+    rate limiting
+    username enumeration                                                         TRUCPF
+    forgot password
+    check for unsafe transmission of credentials
+    test for logic flaw
+    
+5.Session Management
+    insecure transmission of tokens
+    CSRF    
+    session fixation                                                                    ICC
+    cookie scope
+    
+6.Test Access Controls
+    Multiple accounts
+    insecure access control methods like PUT HEAD
+    test with limited access(Try to perform high user action with low user)     MIL
+    
+7.Test for Input Based Vulnerability
+    Path traversal
+    File Inclusion
+    Injections                                                                  FIPX
+    XSS  
+    
+8.Test for Function Specific Vulnerabilities
+    SMTP injection
+    SOAP injection
+    XXE
+    Buffer Overflow
+    LDAP injection
+    
+9.Test for Logic Flaws
+    Depend on the application
+    
+10.Test for shared hosting Issues
+    Test segregation in shared infrastructure
+    test segregation b/w ASP hosted application
+    
+11.Test for application server functionality
+    default credentials
+    default content
+    dangerous http methods
+    web server software bug
+    test for web application firewall
+    
+12.Miscellaneous checks
+    
+13.Information leakage
+    

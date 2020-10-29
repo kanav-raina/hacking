@@ -1,0 +1,9 @@
+Stored XSS leads to account takeover
+Oauth token redirect to attacker leads to account takeover
+No confirmation of account
+If password reset request is sent over http, then attacker can capture the token and account takeover is possible
+Username enumeration + brute force on password leads to account takeover
+Check if email verification code can be brute forced,
+Check if OTP can be bruteforced
+Modify the host to yoursite.com/original_site.com, if it's redirecting, then account takeover is possible
+For account takeover look is there any way to link attacker account to victim account

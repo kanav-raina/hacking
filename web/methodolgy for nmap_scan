@@ -1,0 +1,6 @@
+Find all the subdomains and then check which subdomains are up using cat subdomains|grep https|httprobe -p 443
+
+then remove htpps from this and pass this to nmap
+ nmap -iL subdomains -T5
+ 
+ Check which ports are open and then try to access

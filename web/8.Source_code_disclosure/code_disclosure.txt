@@ -1,0 +1,12 @@
+#Source Code Disclosure
+Source Code often contains some form of senstive information- whether it be configuration related information(eg . database credentials) or simply information on how the web application functions.If disclosed, such information can potentially be used by an attacker to discover logical flaws and escalate into a subsequent chain of attacks which would not be possible without having access to the application's source code.
+
+Eg :- GET /showimage.php?file=database_connect.php
+
+site:abc.com  index.of.backup
+
+site.com/.git
+
+index of /.git site
+
+File Inclustion often leads to source code disclosure

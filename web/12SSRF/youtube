@@ -1,0 +1,25 @@
+GET /?url=http://abc.com                         there are three possibilities   LFI RFI SSRF
+Host:example.com
+
+Types : Basic Blind
+
+What can we do with ssrf?
+	Access internal services
+	Read internal files
+	Scan third party app through vulnerable app
+
+Testing URL schemas 
+	file://		ldap://
+	dict://		tftp://
+	sftp://		gopher://                                   By default no authentication on mongo db
+
+
+Places to look for SSRF
+Case 1:	http://example.com/index.php?page=abc.php                    change abc.php with your requests like abc.burpcollabolator.net
+Case 2: Try changin url in post request
+		POST /test/edit
+		Host:example.com
+
+		{'url':'example.com/update'}
+
+Try chainging url with something like abc.burpcollabolator.net

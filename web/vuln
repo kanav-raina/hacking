@@ -1,0 +1,31 @@
+Integer and Array(no conversion)
+	0==[1,2,3]      FALSE
+	0!=[1,2,3]      TRUE
+
+Integer and Float(conversion to float)
+	1==1.5          FALSE
+	1==1.0          TRUE
+
+Integer and Strings
+	10=="10"        TRUE
+	2=="two"        FALSE
+	0=="Days since the last time PHP confused me" TRUE
+
+	2=="2 cans of lemonade"     TRUE
+
+https://www.youtube.com/watch?v=ASYuK01H3Po     watch it in afternoon
+
+                        A few highlights
+[]==false
+but {}==true
+
+"0abc"==0(0 at beginning of string)
+but "0x2"==2
+
+false==null
+"0"==false
+but "0"!=null
+
+"0e1"=="0e99"       ?????
+   0*10^1 ==0*10^99
+

@@ -1,0 +1,13 @@
+#DEFINITION
+HTML injection is a type of injection issue that occurs when a user is able to control an input point and is able to inject arbitrary HTML code into a vulnerable web page. 
+
+#IMPACT
+	>>It can allow attacker to modify the page.
+	>>DOM can be load there.
+
+HTML Injection hunting
+	>>Find a input parameter either GET based or POST based.
+	>>If your input reflect back to you on web page there may be HTML injection.
+	>>Execute any html code ,if you succeed to execute any html code then there is html injection
+
+payloads :<h1>heading</head>

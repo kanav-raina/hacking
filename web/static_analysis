@@ -1,0 +1,9 @@
+What to look for:  URLS, domains, passwords, API keys, Storage, 
+
+Potential dangerous areas in code : eval , innerHTML
+
+Outdated frameworks
+
+waybackurls smvdu.ac.in|grep "\.php"|uniq|sort
+
+

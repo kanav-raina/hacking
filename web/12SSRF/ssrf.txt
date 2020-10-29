@@ -1,0 +1,28 @@
+SERVER SIDE REQUEST FORGERY
+	>>SSRF refers to an attack where in an attacker is able to send a crafted request from a vulnerable web application.
+
+Impact 
+	>>Abuse trust
+	>>Bypass ip whitelisting
+	>>Bypass host based authentication
+	>>Read resource
+	>>Scan the internal network
+
+How to hunt for SSRF?
+You have to find any parameter that may have some kind of external interaction or they can interact to external domain
+    Example : any.com/index/php?uri=http://external.com
+
+Possible SSRF Parameters
+	dest	redirect	uri		file	document	folder		path	continue	url		root	path	pg	
+	style	window		next	data	pdf		template	php_path	reference	site	html	doc		feed
+	host	val		validate	domain		port	to		out		callback	return		page	navigation	
+	open	result		view	dir		show
+
+Exploitation of SSRF
+	>>Read file from server
+	>>Scan the internal network(we get to know which ports are open)
+	>>SSRF with RFI
+
+How can you check the server is making request to third party domain?
+burp collabolator
+postbin

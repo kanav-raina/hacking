@@ -1,0 +1,24 @@
+IDOR: deleting, downloading, modifying
+
+IDOR allowed to change delivery address
+IDOR allowed to change images of other users
+IDOR allowed to view other user info
+IDOR allow to change the content of file of other user
+IDOR allow to change the filename eg : user 1 shared the file with user 2.Now user2 can remove the file.
+IDOR allow to change the author_name using author_id
+IDOR to delete the account of other user
+On download change parameter and something else gets downloaded.
+IDOR allowed to edit post of other users
+IDOR to update folder name of other user
+IDOR allowed to delete images of other users
+IDOR allowed to upload images of other users
+Changing details of other users profile using UUID (IDOR)
+[idor] Unauthorized Read access to all the private posts(Including Photos,Videos,Gifs)
+You can comment from other user using IDOR
+Hacker is able to cancel the other user's table booking in zomato
+Make other useres to follow you on social networking sites(IDOR)
+IDOR to deactivate account of other user
+
+GET /images/135.jpg    try GET /images/136.jpg
+
+DOWNLOAD UPDATE CREATE DOWNLOAD

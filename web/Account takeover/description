@@ -1,0 +1,21 @@
+Scenario1:By just adding one more email in request, reset password link is sent to both emails.Hurrah!!!!!!
+	eg:{"email":["abc@gmail.com","def@gmail.com"]}
+
+Scenario2:User 1 created account,He request reset password link
+         Now change the email of this account, now this account belongs to user2
+         Click on reset password link of user1, if it works account takeover is possible
+
+Scenario3: Host Header injection bypass
+           Host:example.com? .domain.com
+
+Scenario4: Reset link leaked on Referer
+
+Scenario5:Reset link is not expiring after one use
+
+Scenario6: Account takeover by IDOR in reset passsword link
+             https://site.com/1234/efadfasfdas
+                               |        |
+                               V        V                 
+                             user_id   unique_token
+
+By changing a valid userid account takeover possible

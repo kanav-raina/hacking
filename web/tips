@@ -1,0 +1,5 @@
+when you see a parameter in url :
+  first remove everything and send it
+  add something randomm and send it
+  insert payload inside the value
+  partially move the characters and then send it

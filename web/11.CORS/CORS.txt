@@ -1,0 +1,12 @@
+Cross Origin Resource Sharing
+	>>Wikipedia defines Cross Origin Resource Sharing as a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the resource originated. So CORS came essentially to elminate some restrictions  imposed by the same origin policy which would block a AJAX requests from accessing data on a web page unless  it is coming from the same origin.
+	>>In simple words, imagine microsoft.com wants to access some data on another website,suppose site.com.This type of request traditionally wouldn't be allowed under the browser's same origin policy .However by supporting CORS request site.com can add a few special response headers that allows exaple.com to access the data.
+
+Headers to Check : Access-Control-Allow-Origin
+
+CORS Hunting methodology
+	>>Just add Origin: bing.com in request and check the response is bing.com is reflected in response in Access-Control-Allow-Origin then there is a possibility of CORS
+
+
+Another way to check Insecure CORS vulnerability
+	curl http://any.com -H "Origin: http://bing.com" -I

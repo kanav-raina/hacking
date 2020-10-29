@@ -1,0 +1,45 @@
+What is XML?
+	>eXtensible Markup Language
+	>Structured syntax
+	>Designed to be human readable as well as machine readable
+
+DTD
+	>Document Type Definition
+	>Used for defining XML document structure
+	>Can also be defined outside of XML file
+		<!DOCTYPE root-element [element-declarations]>
+
+Entities
+	>Entities are used to define shortcuts to any other text
+	>Types of Entities:
+		 >Internal Entity defined within local DTD
+			<!ENTITY foo "bar">
+		 This entity can be reffered within XML as &foo and it will be replaced with the term bar
+		 
+		 >External Entity defined outside of local DTD
+			<!ENTITY foo SYSTEM "file:///external.dtd">
+		
+		 Parameter-Can only be used within a DTD .Used with % symbol 
+			<!ENTITY %name "entity_value">
+
+
+Types of XXE attacks
+	>Classic XXE
+	>Server Side Request Forgery
+	>Denial Of Service
+	>Advanced XXE
+	>Remote Code Execution
+
+Common Places to find XXE
+	>XML file upload(eg. config file)
+	>XML input fields
+	>XML based APIs(SOAP)
+	>XML based files(RSS,SVG)
+
+Uncommon places to find XXE
+	>MS-Office Files(docx, xlsx etc)
+	>SAML_bsaed SSO
+	>Voice XML in IVR systems
+	>Online map editors using KML(Try this where you can share map location like watsapp etc)
+
+Jo parameter reflect hota hai usi keliye xxe check kro	

@@ -1,0 +1,66 @@
+XSS Vulnerability
+	>>Allows an attacker to inject javascript code into the page
+	>>Code is executed when the page loads
+	>>Code is executed on the client machine not on the server
+
+Three main types: Reflected XSS
+                  Stored XSS
+                  DOM XSS
+
+EXPLOITING XSS
+	>>HTML  Attribute URL script style
+	>>Test text boxes and urls parameters on the form
+  
+
+REFLECTED XSS
+	>>Not stored
+	>>Only work if the target visits a specially crafted url
+    eg:http://target.com/something=<script>alert(1)</script>
+
+               USER -> BROWSER -> SERVER
+
+Stored XSS
+	Stored in database
+	The injected code is executed everytime the page is loaded
+
+               USER -> BROWSER -> SERVER -> DATABASE
+
+DOM XSS
+               USER -> BROWSER
+
+METHODOLOGY
+	>>Find all the pages with parameters
+	>>Give any input there (payload)
+	>>We need to locate all the places on the page our input ended up.
+	>>Next we need to detect what kind of filters are there and where are they located.
+	>>We will choose the place that is the weakest and easiest to execute an XSS attack.
+
+	>>#This can be easily done with burp
+      spider this
+      filter urls having parameter
+      check input is reflecting or not
+      Make payloads for this and  upload paylods in intruder
+
+RISK
+	>>Changing Content
+	>>Steal cookies
+	>>Stealing credentials
+	>>Keylogging
+	>>Phishing
+	>>URL Redirection
+
+Practice site
+	>>leettime.net
+
+XSS TOOLs
+	xsser
+	xss sniper
+  
+
+
+XSS Through Header Parameters
+	>>Host:'><script>alert(1)</script>
+	>>Referer:'><script>alert(1)</script>
+
+
+EXTRA knowledge from reports

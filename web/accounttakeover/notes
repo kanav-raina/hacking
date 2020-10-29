@@ -1,0 +1,7 @@
+1.Click on reset password
+	go to the reset link, click on it and intercept it look for uuid parameter change the uuid parameter and see if the password is changed for other user
+
+
+2.Click on reset password and intercept it 
+	response looks something like this [email:"abc@gmail.com"]
+	and modify it like this		   [email:"['abc@gmail.com','def@gmail.com']"]	

@@ -1,0 +1,13 @@
+URL redirection is used as part of phishing attack
+
+Common Parameter list
+	dest	redirect	val		uri		path	validate	domain		navigation
+	continue	url		callback	return		window		to		show
+	page	feed	out		host	port	next	view	dir		data
+
+ReturnUrl at the time of login
+
+URL redirection on path fragments
+example: any.com/payloads
+         any.com/bing.com
+         any.com//bing.com

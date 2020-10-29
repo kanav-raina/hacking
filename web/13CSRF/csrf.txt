@@ -1,0 +1,32 @@
+CROSS SITE REQUEST FORGERY
+
+Cross Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they are currently authenticated.
+
+	>>Request are not validated at the server side
+	>>Server does not check if the user generated the request
+	>>Requests can be forged and sent to users to make them do things they don't intend to do such as changing their password
+
+
+       Right click>Engagement tools>Generate CSRF POC
+
+Injection Point for CSRF
+	CSRF can be :-Get Based
+                  Post Based
+
+CSRF on logout page
+
+GET Based (Send link to a victim and our actions get executed)
+POST Based(create HTML file & then you have to execute)
+
+Prevention:
+	>>Server will only accept form if the unique token is returned
+
+Dynamic Synchronizing Token
+	1.Generate an unpredictable token that can not be reused
+		>>Tokens need to be a large value
+		>>It must be random
+		>>It should be unique
+		>>Other factors can be inclulded in token generation algorithm
+
+	2.Embed the token in HTML page in hidden form.
+	3.Verify the token when form is submitted.

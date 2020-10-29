@@ -1,0 +1,2 @@
+xss in shopify 
+https://app.shopify.com/services/logiin/identity?destination_uuid=123&google_apps_uri=javascript:alert(1)&return_to=https://app.shopify.com

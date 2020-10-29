@@ -1,0 +1,24 @@
+link:https://medium.com/@madrobot/ssrf-server-side-request-forgery-types-and-ways-to-exploit-it-part-3-b0f5997e3739
+
+1.Lets look in to basic SSRF
+
+	https://robert-brook.com/parliament/index.php?page=http://www.parliament.uk/business/news/2019/parliamentary-news-2019/this-week-in-the-commons-friday-25-january-2019/
+
+2.SSRF in ffmpeg
+	https://github.com/neex/ffmpeg-avi-m3u-xbin
+	https://youtu.be/OQBZ__L23KU
+3.SSRF in JIRA
+	https://<JIRA_BASEPATH>/plugins/servlet/oauth/users/icon-uri?consumerUri=…
+
+4.SSRF in JSmol2WP plugin
+	inurl:wp-content/plugins/jsmol2wp
+
+5.SSRF in Qards plugin
+	inurl:inurl:wp-content/plugins/qards
+
+6.SSRF in pdf conversion
+	Vulnerable sites -
+		https://pdfcrowd.com/#convert_by_input
+		https://convertio.co/html-pdf/
+
+

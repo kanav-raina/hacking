@@ -1,0 +1,7 @@
+inurl:/wwwboard/passwd.txt
+ext:swf
+filetype:log
+intitle:”Index of..etc” passwd
+
+inurl:fisheye AND inurl:changelog -site:http://atlassian.com  -site:http://github.com 
+inurl:crucible AND inurl:changelog -site:http://atlassian.com  -site:http://github.com 

@@ -1,0 +1,7 @@
+DNS Records (NS, A, MX, CNAME, SPF) Explained
+The most widely used DNS record types, and their purpose are as follows:
+
+A - specifies IP addresses corresponding to your domain and its subdomains;
+MX - specifies where the emails for your domain should be delivered;
+CNAME - specifies redirects from your domain's subdomains to other domains / subdomains;
+TXT - these records are used to store text-based information related to your domain. One of their most common uses is for SPF data. SPF, or Sender Policy Framework, is an attempt to control forged e-mail.

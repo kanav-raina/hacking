@@ -1,0 +1,17 @@
+/?q=https://burp_collabolator
+/?url=https://burpcollabolator
+
+uri_injection
+
+mostly found in file uploads 
+
+Try:Upload ssrf data in file upload
+    In subdomains look for host
+    
+POST http://abc.com
+HOST:
+Referer:
+
+{
+ "images":["http://bing.com"]
+}

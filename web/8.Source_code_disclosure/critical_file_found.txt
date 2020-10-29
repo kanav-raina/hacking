@@ -1,0 +1,5 @@
+Critical File Found means if a webserver/web_application having any file that contains some kind of information that will be use in further attacking
+Impact:
+	>>May be database password
+	>>Web server authentication code
+	>>Critical business logic information

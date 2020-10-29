@@ -1,0 +1,12 @@
+Scenario1: Add next_url in oauth request which contain redirect uri
+
+Scenario2: Change redirect uri to subdomains
+
+Scenario3: Capture the oauth request and use it as many times as you want
+
+Scenario4:       redirect_uri=javascript:alert(1)
+                 redirect_uri=data:base64 value
+
+
+state parameter is use to prevent CSRF
+

@@ -1,0 +1,17 @@
+Sender Policy Framework (SPF) is a technical standard that helps protect email senders and recipients from spam,spoofing, and phishing .It is a form of email authentication.
+
+Specifically, it defines a way to validate that an email message was sent from an authorized mail server,in order to detect forgeryand to prevent spam.It was design to supplement SMTP, the basic protocol used to send email, because SMTP does not itself include any authentication mechanism.
+
+What is SPF record?
+An SPF record is included in an organization's DNS database.An SPF record is a specially formatted version of standard DNS txt record.
+
+How to check that domain have spf record?
+	>>http://www.kitterman.com/spf/validate.html
+	>>http://mxtoolbox.xom
+
+Exploitation of SPF
+	You can use any fake mailer to forge the mail of a vulnerable domain
+
+Anonymous mail provider:
+    emkei
+    anonumousmail.me

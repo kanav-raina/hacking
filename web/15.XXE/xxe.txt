@@ -1,0 +1,27 @@
+XML injection is an attack technique used to manipulate or compromise the logic of XML content and/or structures into an XML message can alter the intended logic of the application
+
+Hunting of XXE
+	>>Attemp to inject XML or reserved characters into input parameters and observe if XML parsing errors are generated.
+	>>For web servers, check each input parameters specified in the WSDL document for those type of XML.
+	>>Use intruder to inject xml payloads to fetch system configuration file.
+	
+	<?xml version="1.0" encoding="UTF-8"?>
+	<root>
+	    <name>akshay</name>
+	    <tel>12345</tel>
+	    <email>abc@gmail.com</email>
+	    <password>qwertyuiop</password>
+	</root>
+	
+	Now change this into 
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE xxe [<!ENTITY xxe "this is test">]>
+	<root>
+	    <name>&xxe</name>
+	    <tel>12345</tel>
+	    <email>abc@gmail.com</email>
+	    <password>qwertyuiop</password>
+	</root>
+	
+	The information will be reflected
+	You can also use remote code execution using this.
